@@ -12,7 +12,7 @@ class MakeFileHandler(logging.FileHandler):
         Wrapper Class around the builtin Filehandler.
     """
 
-    def __init__(self, filename: str, mode: str = 'a', encoding: str = None, delay: bool = False) -> None:
+    def __init__(self, filename: str, mode: str = 'a', encoding: str = 'utf-8', delay: bool = False) -> None:
         """
             The original FileHandler's init is called, right after the
             directory used to store the objection logfile is created.
